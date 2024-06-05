@@ -1,0 +1,16 @@
+
+    <% const  nama ='mamad disini' ; %>
+    <h1>hallo dunia tipu tipu ass ass asss you</h1>
+    <h2>hulla mamad disini<%= nama%> </h2>
+    
+    <h4>Daftar Mahasiswa</h4>
+    <% if (mahasiswa.length < 1) { %>
+     <p> sepi amat</p>
+    <% } else{ %> 
+        <% mahasiswa.forEach(mhs => { %>
+        <ul>
+            <li>Nama : <%= mhs.nama %></li>
+            <li>Email : <%= mhs.email %> </li>
+        </ul>
+        <% }) %>
+    <% } %>
